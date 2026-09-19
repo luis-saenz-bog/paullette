@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Día de las Flores Amarillas 💛</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="warm">
+
+  <!-- Capas de fondo decorativas -->
+  <div class="vignette" aria-hidden="true"></div>
+  <div id="sparkles-container" class="sparkles-container" aria-hidden="true"></div>
+  <div id="ambient-hearts" class="ambient-hearts" aria-hidden="true"></div>
+  <div id="petals-container" class="petals-container" aria-hidden="true"></div>
+  <div id="heart-container" class="heart-container" aria-hidden="true"></div>
+  <div id="confetti-container" class="confetti-container" aria-hidden="true"></div>
+  <div id="click-bloom-container" class="click-bloom-container" aria-hidden="true"></div>
+  <div id="critter" class="critter" aria-hidden="true">🦋</div>
+
+  <div class="page-fade">
+
+    <!-- Guirnalda decorativa de tulipanes -->
+    <div class="garland" aria-hidden="true">
+      <span>🌷</span><span>💛</span><span>🌷</span><span>💛</span><span>🌷</span><span>💛</span><span>🌷</span>
+    </div>
+
+    <header class="header">
+      <h1 class="title-animated">Feliz Día de las Flores Amarillas <span class="emoji">💛</span></h1>
+      <p class="subtitle">21 de septiembre</p>
+
+      <div class="flourish-divider">
+        <span class="flourish-line"></span>
+        <span class="flourish-flower">🌷</span>
+        <span class="flourish-line"></span>
+      </div>
+
+      <div class="countdown" id="countdown">
+        <div class="countdown-item"><span id="cd-days">00</span><small>días</small></div>
+        <div class="countdown-item"><span id="cd-hours">00</span><small>horas</small></div>
+        <div class="countdown-item"><span id="cd-mins">00</span><small>min</small></div>
+        <div class="countdown-item"><span id="cd-secs">00</span><small>seg</small></div>
+      </div>
+      <div class="countdown-celebration" id="countdown-celebration">🌷 ¡Hoy es el día! Feliz Día de las Flores Amarillas 💛</div>
+    </header>
+
+    <main class="main-content">
+
+      <section class="message-card" id="message-card">
+        <span class="corner-ornament top-left">🌷</span>
+        <span class="corner-ornament top-right">🌷</span>
+        <span class="corner-ornament bottom-left">🌷</span>
+        <span class="corner-ornament bottom-right">🌷</span>
+        <span class="sparkle-deco sd-1">✦</span>
+        <span class="sparkle-deco sd-2">✧</span>
+        <span class="sparkle-deco sd-3">✦</span>
+
+        <div class="ribbon-label">💌 Un mensaje especial para ti, Paullette</div>
+
+        <p class="intro-line">Para la persona que hace florecer mi corazón</p>
+
+        <p class="handwritten-message">
+          Luis ama a <span class="recipient-name">Paullette</span> y le desea un hermoso 21 de septiembre
+        </p>
+        <p class="small-note">Que este día florezca tanto como el amor que siento por ti, mi Paullette 🌷💛</p>
+
+        <div class="button-row">
+          <button id="open-modal-btn" class="cta-button">
+            <span>💛 Abrir mensaje</span>
+          </button>
+          <button id="share-btn" class="cta-button secondary">
+            <span>Compartir</span>
+          </button>
+          <button id="download-btn" class="cta-button secondary">
+            <span>Descargar imagen</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Medidor de amor interactivo -->
+      <section class="love-meter-card">
+        <span class="corner-ornament top-left">🌷</span>
+        <span class="corner-ornament top-right">🌷</span>
+        <h2 class="love-meter-title">¿Cuánto te ama Luis, Paullette?</h2>
+        <p class="love-meter-caption" id="love-caption">Toca el tulipán y descúbrelo 🌷</p>
+
+        <div class="love-meter-track">
+          <div class="love-meter-fill" id="love-fill"></div>
+        </div>
+
+        <button id="love-tap-btn" class="tulip-tap-btn" aria-label="Tocar tulipán">🌷</button>
+      </section>
+
+      <!-- Galería -->
+      <section class="gallery">
+        <h2 class="gallery-title">Nuestros momentos 🌷</h2>
+        <div class="carousel">
+          <button class="carousel-arrow left" id="prev-slide" aria-label="Anterior">&#10094;</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="carousel-track">
+              <div class="carousel-slide"><div class="placeholder-photo"><img src="foto1.png" alt="Nosotros" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'🌷 foto1.png no encontrada'}))"><span class="photo-heart">💛</span></div><p>Uno de nuestros momentos</p></div>
+              <div class="carousel-slide"><div class="placeholder-photo"><img src="foto2.jpg" alt="Nosotros" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'🌷 foto2.jpg no encontrada'}))"><span class="photo-heart">💛</span></div><p>Uno de nuestros momentos</p></div>
+              <div class="carousel-slide"><div class="placeholder-photo"><img src="foto3.png" alt="Nosotros" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'🌷 foto3.png no encontrada'}))"><span class="photo-heart">💛</span></div><p>Uno de nuestros momentos</p></div>
+              <div class="carousel-slide"><div class="placeholder-photo"><img src="foto4.png" alt="Nosotros" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'🌷 foto4.png no encontrada'}))"><span class="photo-heart">💛</span></div><p>Uno de nuestros momentos</p></div>
+            </div>
+          </div>
+          <button class="carousel-arrow right" id="next-slide" aria-label="Siguiente">&#10095;</button>
+        </div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </section>
+
+
+      <!-- Razones para amarte -->
+      <section class="reasons-card">
+        <span class="corner-ornament top-left">🌷</span>
+        <span class="corner-ornament top-right">🌷</span>
+        <h2 class="reasons-title">Razones para amarte, Paullette</h2>
+        <p class="reasons-text" id="reasons-text">Toca el botón y descubre una razón 🌷</p>
+        <button id="reason-btn" class="cta-button">
+          <span>🌷 Dame una razón</span>
+        </button>
+      </section>
+
+      <!-- Contador de días juntos -->
+      <section class="together-card">
+        <span class="corner-ornament top-left">🌷</span>
+        <span class="corner-ornament top-right">🌷</span>
+        <h2 class="together-title">Nuestro tiempo juntos 💛</h2>
+        <p class="together-days" id="together-days">0</p>
+        <p class="together-caption">días juntos, Paullette 🌷</p>
+        <p class="together-since">Desde el 20 de noviembre</p>
+      </section>
+
+      <!-- Rompecabezas de nuestra foto -->
+      <section class="puzzle-card">
+        <span class="corner-ornament top-left">🌷</span>
+        <span class="corner-ornament top-right">🌷</span>
+        <h2 class="puzzle-title">Arma nuestro rompecabezas 🧩</h2>
+        <p class="puzzle-instructions">Toca dos piezas para intercambiarlas y forma la foto completa.</p>
+
+        <div class="puzzle-grid" id="puzzle-grid"></div>
+
+        <button id="puzzle-shuffle-btn" class="cta-button secondary">
+          <span>🔀 Volver a mezclar</span>
+        </button>
+
+        <div class="puzzle-success" id="puzzle-success">
+          <p class="puzzle-congrats">¡Lo lograste, Paullette! 🎉💛</p>
+          <p class="puzzle-poem">
+            Como las piezas de este rompecabezas,<br>
+            que sueltas no cuentan ninguna historia,<br>
+            así somos tú y yo: piezas dispersas<br>
+            que juntas forman toda mi memoria.
+            <br><br>
+            Cada pieza es un momento, una mirada,<br>
+            un abrazo que encaja sin buscarlo,<br>
+            y aunque el mundo nos mezcle de pasada,<br>
+            siempre encuentro la forma de armarlo.
+            <br><br>
+            Porque así es el amor: piezas que giran,<br>
+            que a veces no encajan a la primera,<br>
+            pero cuando se acomodan, respiran<br>
+            una imagen completa y verdadera.
+            <br><br>
+            Gracias por ser la pieza que faltaba, Paullette. Te amo. 💛🌷
+          </p>
+        </div>
+
+        <p class="puzzle-hint">Tip: coloca una foto tuya y de Luis llamada <code>nuestra-foto.jpg</code> en esta misma carpeta.</p>
+      </section>
+
+      <p class="hint centered">🌷 Toca en cualquier parte de la pantalla para hacer florecer un tulipán, mueve el mouse para espantar los pétalos, y presiona <kbd>M</kbd> para que aparezcan fotitos nuestras</p>
+    </main>
+
+    <footer class="footer">
+      <span class="footer-flower">🌷</span>
+      <span>21 de septiembre — Día de las Flores Amarillas</span>
+      <span class="footer-flower">🌷</span>
+    </footer>
+
+  </div>
+
+  <!-- Modal romántico -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <span class="corner-ornament top-left">🌷</span>
+      <span class="corner-ornament top-right">🌷</span>
+      <span class="corner-ornament bottom-left">🌷</span>
+      <span class="corner-ornament bottom-right">🌷</span>
+      <button id="close-modal-btn" class="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="modal-flower-ring">
+        <div class="modal-flower">🌷</div>
+      </div>
+      <p class="modal-message" id="modal-message">
+        Paullette, en este Día de las Flores Amarillas quiero decirte
+        lo mucho que te amo y lo feliz que me haces cada día. Contigo todo
+        florece: mi sonrisa, mis ganas de soñar y mi corazón entero.
+        <br><br>
+        Eres mi tulipán favorito entre todas las flores del mundo, la razón
+        por la que cada 21 de septiembre —y cada día del año— vale la pena
+        celebrar. Gracias por llenar mi vida de color.
+        <br><br>
+        Que este día te recuerde cuánto te quiero. Te amo, Paullette. 💛🌷
+        <br><span class="modal-signature">— Luis</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Toast de despedida -->
+  <div id="farewell-toast" class="farewell-toast">Te amo, Paullette 💛 Gracias por leer hasta el final</div>
+
+  <!-- Música de fondo suave (opcional: reemplaza la ruta por tu propio mp3) -->
+  <audio id="bg-music" loop preload="none">
+    <source src="musica-fondo.mp4" type="audio/mp4">
+  </audio>
+  <button id="music-toggle" class="music-toggle" title="Reproducir música de fondo">🔈</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
